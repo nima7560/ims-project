@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Resignation Form</title>
+</head>
+<body>
+	
+	<div class="container">
+		<form action="#" class="login active">
+			<h2 class="title">Resignation form</h2>
+			<div class="form-group">
+				<label for="name">Employee Name:</label>
+				<div class="input-group">
+					<input type="text" id="name" required>
+				</div>
+			</div>
+
+            <div class="form-group">
+				<label for="EID No">EID No:</label>
+				<div class="input-group">
+					<input type="text" id="EID No" >
+				</div>
+
+			</div>
+
+			<div class="form-group">
+				<label for="email">Employee Email:</label>
+				<div class="input-group">
+					<input type="email" id="email">
+				</div>
+			</div>
+            
+            <div class="form-group">
+                <label for="resignation">I hereby tender my resignation as an employee of ABC company to be effective on:</label>
+                <div class="input-group">
+                    <input type="date" id="date">
+                </div>
+            </div>
+
+			<div class="form-group">
+				<label for="reason">I am resigning because:</label>
+				<div class="field">
+					<textarea
+					  id="reason"
+					  name="reason"
+					  placeholder="Reason for Leave"
+					  rows="10"
+					  columns="100"
+					  required
+					></textarea>
+					</div>
+
+			</div>
+
+			<input type = "Submit" name: "submit" value="submit" class: btn" 
+
+
+			<button type="submit" class="btn-submit"></button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

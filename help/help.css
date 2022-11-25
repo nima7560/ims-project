@@ -1,0 +1,88 @@
+/** @format */
+
+body h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+.wrapper {
+  background: #fff;
+  width: 500px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10% auto 0;
+  position: relative;
+}
+.container {
+  padding: 15px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.wrapper .heading {
+  text-align: center;
+  margin: -15px -15px 15px;
+  padding: 15px 0;
+}
+.wrapper .row {
+  margin: 10px -15px;
+}
+.wrapper .row > div {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.wrapper .col_half {
+  width: 50%;
+  float: left;
+}
+.wrapper label {
+  display: block;
+  margin: 0 0 5px;
+}
+.wrapper input[type="text"],
+.wrapper input[type="email"],
+.wrapper input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+.wrapper textarea {
+  height: 8em;
+}
+.wrapper input[type="submit"] {
+  background: black;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2em;
+}
+.wrapper input[type="submit"]:hover,
+.wrapper input[type="submit"]:focus {
+  background: grey;
+}
+@media (max-width: 600px) {
+  .wrapper .col_half {
+    width: 100%;
+    float: none;
+  }
+  .wrapper label {
+    margin: 10px 0;
+  }
+}
+
+label {
+  padding-left: 5px;
+}

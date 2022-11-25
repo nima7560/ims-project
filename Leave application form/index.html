@@ -1,0 +1,142 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave Management Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <form id="signup" id="signup">
+        <h1>Leave Management Form</h1>
+        <h2>ABC Company</h2>
+        <h4>Thimphu</h4>
+        <h4>Phone: +975-17816390</h4>
+        <br /><br />
+        <div class="form-field">
+          <label for="username" id="username"><b>Name:</b>&emsp;</label>
+          <input
+            type="text"
+            id="username"
+            name="fname"
+            placeholder="Name"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <br /><br />
+        <div class="fieldgender">
+          <label for="gender"><b>Gender:</b> </label> &emsp;
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label> &emsp;
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label> &emsp;
+          <input type="radio" id="others" name="gender" value="others" />
+          <label for="others">Others</label>
+        </div>
+        <br /><br />
+        <div class="form-field">
+          <label for="email" id="email"><b>Email:</b></label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            autocomplete="off"
+          />
+          <small></small>
+          <br /><br />
+        </div>
+        <div class="form-field">
+          <label for="phone" id="phonenumber"><b>Phone Number:</b></label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <br /><br />
+        <div class="form-field">
+          <label for="address"><b>Address</b></label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+            required
+          />
+          <small></small>
+        </div>
+        <br /><br />
+        <div class="form-field">
+          <label for="leave"><b>Leave Reason</b></label>
+          <select id="leave" name="leave" required>
+            <option value="">Select Leave Type</option>
+            <option value="Annual">Annual</option>
+            <option value="Sick">Sick</option>
+            <option value="Maternity">Maternity</option>
+            <option value="Paternity">Paternity</option>
+            <option value="Other">Other</option></select
+          ><br /><br />
+        </div>
+        <div class="form-field">
+          <label for="start"><b>Start Date</b></label>
+          <input type="date" id="start" name="start" required /><br /><br />
+          <label for="end"><b>End Date</b></label>
+          <input type="date" id="end" name="end" required />
+        </div>
+        <br /><br />
+        <div class="field">
+          <label for="reason"><b>Reason Details</b></label>
+          <textarea
+            id="reason"
+            name="reason"
+            placeholder="Reason for Leave"
+            rows="10"
+            columns="100"
+            required
+          ></textarea>
+        </div>
+        <br /><br /><br />
+        <div class="field">
+          <label for="declare"
+            ><b><u>Declaration</u></b></label
+          >
+          <div class="Text">
+            <input
+              type="checkbox"
+              id="declare"
+              name="declare"
+              value="declare"
+              required
+            />
+            <p>
+              <br /><br />
+              I,hereby,request leave/absence from duty as indicated above and
+              certify that such leave/absenceis requested for the purpose
+              indicated. I understand that falsification on this form may be
+              grounds for disciplinary action.
+            </p>
+          </div>
+        </div>
+        <br /><br />
+        <div class="formbutton">
+          <input type="submit" value="submit" onclick="f1()" class="btn" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
